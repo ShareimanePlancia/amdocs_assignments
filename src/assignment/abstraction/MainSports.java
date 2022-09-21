@@ -1,4 +1,4 @@
-package Assignment2_Abstraction;
+package assignment.abstraction;
 
 public class MainSports {
 
