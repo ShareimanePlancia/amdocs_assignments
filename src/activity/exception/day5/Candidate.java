@@ -1,9 +1,9 @@
 package activity.exception.day5;
 
 public class Candidate {
-		String name;
-		String gender;
-		double expSalary;
+		private String name;
+		private String gender;
+		private double expSalary;
 		
 		Candidate(String name,String gender, double expSalary){
 			this.name = name;
