@@ -7,7 +7,6 @@ public class Phonebook {
 	public Phonebook() {
 		
 	}
-
 	
 	public Phonebook(String name, String numbers) {
 		super();
@@ -15,24 +14,14 @@ public class Phonebook {
 		this.numbers = numbers;
 	}
 	
-	
-
-
 	public String getName() {
 		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getNumbers() {
 		return numbers;
 	}
 
-	public void setNumbers(String numbers) {
-		this.numbers = numbers;
-	}
 
 	@Override
 	public String toString() {
