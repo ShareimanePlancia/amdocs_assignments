@@ -21,8 +21,5 @@ public class OddOrEven extends Thread{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-
-
     }
 }
