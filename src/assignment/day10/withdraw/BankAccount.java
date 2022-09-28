@@ -6,12 +6,18 @@ public class BankAccount {
     private double accountBal;
     
     public void deposit(double amount) {
+    	try {
         if (amount > 0) {
             accountBal = accountBal + amount;
             System.out.println("Successfully deposited P " + amount);
         } else {
             System.out.println("Cannot Deposit " + amount);
         }
+        Thread.sleep(1000);
+        }
+    	catch(InterruptedException e) {
+            e.printStackTrace();
+    	}
     }
 
     void withdrawMethod(BankAccount account, double amount) {
@@ -27,7 +33,6 @@ public class BankAccount {
             e.printStackTrace();
         }
     }
-    
     
     public void displayCurrentBalance() {
 
