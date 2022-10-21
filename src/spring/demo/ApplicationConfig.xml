@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns ="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd ">
+
+	<context:annotation-config/>
+
+		<bean id="employee" class="com.training.spring.assignment.Employee" >
+		<property name="empName" value= "Cassandra"/>
+		<property name="salary" value= "25000.00"/>
+		<constructor-arg value ="14" type="double"/>
+
+	</bean>
+
+		<bean id="laptop" class="com.training.spring.assignment.Laptop" >
+		<property name="brand" value= "Acer"/>
+		<property name="model" value= "Predator"/>
+		<property name="color" value= "Black"/>
+	</bean>
+
+
+
+</beans>
