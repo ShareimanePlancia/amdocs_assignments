@@ -12,11 +12,11 @@ import com.training.springbootassesment.repository.HomeRepository;
 public class HomeService {
 	
 	@Autowired
-	HomeRepository repo;
+	HomeRepository repository;
 	
 	public boolean isValid(String uname, String pwd) {
 		System.out.println("from page: "+uname+":"+pwd);
-		List<User> users = repo.findAll();
+		List<User> users = repository.findAll();
 		boolean valid = false;
 		for(User usr:users) {
 			System.out.println(usr.getUserName()+":"+usr.getPassword());
